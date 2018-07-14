@@ -1,0 +1,27 @@
+body {
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    background-image: url("../images/squared_metal_@2X.png");
+  }
+  
+  html {
+    position: relative;
+    min-height: 100%;
+  }
+  
+  main {
+    margin: 80px 0;
+  }
+  
+  .block {
+    background-color: #fff;
+    padding: 30px;
+    margin-bottom: 30px;
+  }
+  
+  .block-header {
+    color: #4aaaa5;
+    font-family: Georgia, Times, "Times New Roman", serif;
+    font-weight: bold;
+  }
+  
+  

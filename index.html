@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Crystals Collector Game</title>
+    <link rel="stylesheet" href="assets/css/reset.css" media="screen">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css" media="screen">
+</head>
+
+<body>
+
+    <main class="container">
+        <!-- Title and Instructions are to go here.  Instructions pulled from image example provided to us in the class.-->
+        <section class="row">
+            <div class="col-md-12">
+                <article class="block">
+                    <h1 class="block-header">Crystals Collector</h1>
+                    <hr>
+                    <p>You will be given a random number at the start of the game.</p>
+                    <p>There are four crystals below. By clicking on a crystal you will add a specific amount of points to your
+                        total score.</p>
+                    <p>You win the game by matching your total score to random number, you lose the game if your total score
+                        goes above the random number.</p>
+                    <p>The value of each crystal is hidden from you until you click on it.</p>
+                    <p>Each time when the game starts, the game will change the values of each crystal</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- This is the main game area/section-->
+        <div class="row">
+
+            <!-- This is where the randomly generated number to match will be diplayed-->
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <div class="card-header">
+                        <h3 class="card-title text-center">Number to Match</h3>
+                    </div>
+                    <div class="card-body">
+                        <h3 class="text-center" id="num-to-match"></h3>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Display the player game total-->
+            <div class="col-md-4">
+
+                <div class="card mb-4">
+                    <div class="card-header">
+                        <h3 class="card-title text-center">Your Crystals Value</h3>
+                    </div>
+                    <div class="card-body">
+                        <h3 class="text-center" id="crystals-sum"></h3>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Crystals Diplay Section -->
+            <div class="col-md-4">
+
+                <div class="card mb-4">
+                    <div class="card-header">
+                        <h3 class="card-title text-center">Crystals</h3>
+                    </div>
+                    <div class="card-body text-center">
+                        <!-- Too lazy to resize actual image, so I'll just change dimensions in HTML :-( -->
+                        <img src="./assets/images/bluesquare.jpeg" height="43" width="43" id="blue">
+                        <img src="./assets/images/greenrectangle.jpeg" height="43" width="43" id="green">
+                        <img src="./assets/images/orangediamond.jpeg" height="43" width="43" id="orange">
+                        <img src="./assets/images/yellowround.jpeg" height="43" width="43" id="yellow">
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- Game Scores Wins and Losses-->
+        <div class="row">
+
+            <!--Wins go here-->
+            <div class="col-md-6">
+                <div class="card mb-4">
+                    <div class="card-header">
+                        <h3 class="card-title text-center">Wins</h3>
+                    </div>
+                    <div class="card-body">
+                        <h3 class="text-center" id="win-total">0</h3>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Losses Total-->
+            <div class="col-md-6">
+
+                <div class="card mb-4">
+                    <div class="card-header">
+                        <h3 class="card-title text-center">Losses</h3>
+                    </div>
+                    <div class="card-body">
+                        <h3 class="text-center" id="loss-total">0</h3>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        </div>
+
+
+    </main>
+
+    <footer class="footer">
+        <div class="two-toned-footer-color"></div>
+        <p class="text-muted text-muted-footer text-center">&#xA9; Copyright</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+
+    <script type="text/javascript" src="./assets/javascript/game.js"></script>
+</body>
+
+</html>
